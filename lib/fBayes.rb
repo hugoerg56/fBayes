@@ -20,4 +20,14 @@ module FBayesDir
 end
 
 
+require_relative './data/cdc/classifier'
+require_relative './data/internalTurnk/classifier'
+require_relative './data/sr24/classifier'
+
+puts "*" * 100
+
+puts "Clasifier Object: @sr24_classifier"
+puts "Classifier Object: @cdc_classifier"
+puts "Classifier Object: @it_classifier"
+
 require_relative './global_classifier'

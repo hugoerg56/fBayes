@@ -1,20 +1,5 @@
 
 
-require_relative './data/cdc/classifier'
-require_relative './data/sr24/classifier'
-require_relative './data/internalTurnk/classifier'
-
-
-puts "*" * 100
-
-puts "Clasifier Object: @sr24_classifier"
-puts "Classifier Object: @cdc_classifier"
-puts "Classifier Object: @it_classifier"
-
-
-
-
-
 class GlobalClassifier
 
   attr_accessor :classifiers
@@ -35,11 +20,11 @@ class GlobalClassifier
   end
 
 end
-
-
+ 
 #
 # THE BEST CLASSIFIER IS THE SR24
 #
+
 puts "@g as a global object classifier"
 @g = GlobalClassifier.new([@sr24_classifier, @cdc_classifier])
 
